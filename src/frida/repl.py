@@ -417,6 +417,8 @@ def main():
 
                     break
 
+            print >> sys.stderr, '>{}<, >{}<, {}'.format(before_dot, after_dot, encountered_dot)
+
             try:
                 if encountered_dot:
                     for key in sorted(self._repl._evaluate("""(function(o) {
